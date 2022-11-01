@@ -82,8 +82,18 @@ public class IntList {
 
     public static IntList dcatenate(IntList A, IntList B) {
         //TODO:  fill in method
-        return null;
+        if (A == null) {
+            return B;
+        }
+        IntList p = A;
+        while (p.rest != null) {
+            p = p.rest;
+        }
+        /* now, p points to the last IntList */
+        p.rest = B;
+        return A;
     }
+
 
     /**
      * Returns a list consisting of the elements of A followed by the
@@ -91,7 +101,35 @@ public class IntList {
      */
     public static IntList catenate(IntList A, IntList B) {
         //TODO:  fill in method
-        return null;
+        IntList ret = null;
+        IntList p = null;
+
+        if (A != null) { /* Copy A list */
+            ret = new IntList(A.first, null); /* Return val */
+            p = ret; /* The New List */
+            A = A.rest; /* The Old List (ahead of p) */
+            while (A != null) {
+                p.rest = new IntList(A.first, null);
+                p = p.rest;
+                A = A.rest;
+            } /* now p points to the last element of A */
+        }
+
+        if (ret == null && B != null) { /* A == null */
+            // if (A == null && B != null) {  /* this line is bug. A is changed */
+            // Solution: ret == null or use else if
+            ret = new IntList(B.first, null);
+            p = ret;
+            B = B.rest;
+        }
+
+        while (B != null) { /* Copy B list */
+            p.rest = new IntList(B.first, null);
+            p = p.rest;
+            B = B.rest;
+        }
+        return ret;
+    
     }
 
 
