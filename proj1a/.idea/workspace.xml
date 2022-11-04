@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b219f99-7e21-4e7b-8ae1-c3b32910d77a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../lab3/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab3/IntList/IntList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../proj0/Planet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1b/ArrayDeque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1b/Deque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1b/LinkedListDeque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proj1b/Palindrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LinkedListDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/LinkedListDeque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../proj1b/TestPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/../proj1b/TestPalindrome.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +101,7 @@
       <workItem from="1667455315175" duration="1214000" />
       <workItem from="1667457555780" duration="15000" />
       <workItem from="1667524298614" duration="591000" />
+      <workItem from="1667530125490" duration="1602000" />
     </task>
     <servers />
   </component>

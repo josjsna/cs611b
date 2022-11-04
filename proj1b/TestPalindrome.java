@@ -15,4 +15,23 @@ public class TestPalindrome {
         }
         assertEquals("persiflage", actual);
     } Uncomment this class once you've created your Palindrome class. */
+
+
+    static Palindrome palindrome = new Palindrome();
+    @Test
+    public void testwordToDeque(){
+        Deque d = palindrome.wordToDeque("persiflage");
+        String actual = "";
+        for (int i = 0; i < "persiflage".length(); i++) {
+            actual += d.removeFirst();
+        }
+        assertEquals("persiflage", actual);
+    }
+    @Test
+    public void testIsPalindrome(){
+        assertTrue(palindrome.isPalindrome("noon"));
+        assertTrue(palindrome.isPalindrome("horse"));
+    }
+
+
 }

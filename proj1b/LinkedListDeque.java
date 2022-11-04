@@ -1,4 +1,4 @@
-public class LinkedListDeque <T>  {
+public class LinkedListDeque<T>  implements Deque<T> {
     private class Node {
         private Node prev;
         private T item;
@@ -24,7 +24,7 @@ public class LinkedListDeque <T>  {
     /**
      * Adds an item of type T to the front of the deque.
      */
-
+    @Override
     public void addFirst(T item) {
         Node newNode = new Node(sentinel, item, sentinel.next);
         sentinel.next.prev = newNode;
@@ -139,12 +139,3 @@ public class LinkedListDeque <T>  {
         return getRecursive(node.next, i - 1);
     }
 }
-
-
-
-
-
-
-
-
-
