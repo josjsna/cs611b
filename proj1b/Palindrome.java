@@ -9,15 +9,23 @@ public class Palindrome {
 
     //stringbuffer是可变字符类，自动扩容。
     public boolean isPalindrome(String word) {
-        StringBuffer a = new StringBuffer();
-        for (int i = 0; i < word.length(); i++) {
-            a.append(word.charAt(i));
+        //StringBuffer a = new StringBuffer();
+        //for (int i = 0; i < word.length(); i++) {
+          //  a.append(word.charAt(i));
+        //}if(a==null){
+          //  return false;
+        //}
+        //if (a == a.reverse()) {
+          //  return true;
+        //}
+        //return false;
+        Deque<Character> d = wordToDeque(word);
+        while (d.size() > 1) {
+            if (d.removeFirst() != d.removeLast()) {
+                return false;
+            }
         }
-        if (a == a.reverse()) {
-            return true;
-        }
-        return false;
-
+        return true;
     }
 
   //  public boolean isPalindrome2(String word) {
