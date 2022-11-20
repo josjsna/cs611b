@@ -14,6 +14,7 @@ public class Percolation {
         this.N=N;
         this.numberOfOpensites=0;
         uf=new WeightedQuickUnionUF(N);
+        UFwithoutBackWash=new WeightedQuickUnionUF(N*N+2);
         grid=new boolean[N][N];
 
     }
