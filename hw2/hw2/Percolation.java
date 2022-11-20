@@ -43,7 +43,7 @@ public class Percolation {
                 uf.union(xyTo1D(row, col),N*N+1);
                 continue;
             }
-            if(isOpen(mx,my)&& uf.connected(xyTo1D(mx,my),xyTo1D(row,col))==false){
+            if(isOpen(mx,my)&& UFwithoutBackWash.connected(xyTo1D(mx,my),xyTo1D(row,col))==false){
                 uf.union(xyTo1D(mx,my),xyTo1D(row,col));
                 UFwithoutBackWash.union(xyTo1D(row, col),xyTo1D(mx,my));
             }
